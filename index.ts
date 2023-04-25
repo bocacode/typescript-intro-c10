@@ -38,6 +38,33 @@ function sum(x: number, y: number): number {
 }
 
 let total: number =  sum(5,6)
-console.log(total)
+//console.log(total)
 
+function debug(message: string) : void {
+    console.log(message)
+}
+
+//debug("hello world")
+
+interface person {
+    firstName: string,
+    age: number,
+    children: string[],
+    sex?: boolean,
+}
+
+let damian: person = {
+    firstName: "me",
+    age: 23,
+    children: ["Lily","David"],
+    sex: true
+}
+
+let todd: person = {
+    firstName: "todd a",
+    age: 43,
+    children: [],
+}
+
+console.log(damian)
 
